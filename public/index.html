@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formules de Physique - Propagation des Ondes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Formules de Physique</h1>
+            <p class="subtitle">Mémo des formules essentielles sur les ondes et phénomènes associés</p>
+        </div>
+    </header>
+
+    <nav class="container">
+        <ul id="nav-tabs">
+            <li class="active" data-target="propagation">Propagation des Ondes</li>
+            <li data-target="interference">Interférences</li>
+            <li data-target="lumiere">Interférences Lumineuses</li>
+            <li data-target="photoelectrique">Effet Photoélectrique</li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div id="search-box">
+            <input type="text" id="search-input" placeholder="Rechercher une formule...">
+            <button id="search-button">Rechercher</button>
+        </div>
+
+        <section id="propagation" class="active">
+            <h2>Propagation des Ondes</h2>
+            
+            <div class="card">
+                <h3>Terminologie</h3>
+                <div class="formule-box">
+                    <p><strong>Simplification</strong>:</p>
+                    <ul>
+                        <li>(Paire) + π = 0</li>
+                        <li>i(Impaire) + π = ±π</li>
+                        <li>i(Paire + 0,5)π = ∓ π/2</li>
+                        <li>i(Impaire + 0,5)π = ± π/2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Notions Fondamentales</h3>
+                <table class="formule-table">
+                    <thead>
+                        <tr>
+                            <th>Grandeur</th>
+                            <th>Définition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>La fréquence N (Hz)</td>
+                            <td>Nombre d'oscillations effectuées en une seconde.<br>N = ω/2π ou ν = 1/T</td>
+                        </tr>
+                        <tr>
+                            <td>La période T (s)</td>
+                            <td>C'est la durée d'une oscillation T = 2π/ω ou T = 1/ν</td>
+                        </tr>
+                        <tr>
+                            <td>La longueur d'onde λ (m, cm, mm)</td>
+                            <td>Distance parcourue par l'onde pendant une période<br>λ = c/ν</td>
+                        </tr>
+                        <tr>
+                            <td>Onde transversale</td>
+                            <td>C'est une perturbation dont la déformation est perpendiculaire à la direction de la propagation</td>
+                        </tr>
+                        <tr>
+                            <td>Onde longitudinale</td>
+                            <td>C'est une perturbation dont la déformation est parallèle à la direction de la propagation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Équations du Mouvement</h3>
+                <table class="formule-table">
+                    <thead>
+                        <tr>
+                            <th>Grandeur</th>
+                            <th>Formule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E-H d'une source O ou distance à l'instant t</td>
+                            <td>y₁(t) = Asin(ωt + φ₀) (en m, cm, mm)<br>
+                                φ = 0, sens positif des élongations<br>
+                                φ = π, sens négatif des élongations<br>
+                                φ = π/2, élongations maximales<br>
+                                φ = -π/2, élongations minimales</td>
+                        </tr>
+                        <tr>
+                            <td>Amplitude (m, cm, mm)</td>
+                            <td>C'est la valeur maximale prise par l'élongation.<br>
+                                a = V₀/ω (V₀ = vitesse initiale)<br>
+                                a = L/2 (L : longueur trajectoire)</td>
+                        </tr>
+                        <tr>
+                            <td>Célérité (vitesse de propagation)</td>
+                            <td>v = √(F/μ) ou v = √(E/ρ) (corde seulement)<br>
+                                v = λ · N ou v = λ/T (liquide ou une corde)</td>
+                        </tr>
+                        <tr>
+                            <td>Phase d'un point situé à distance x</td>
+                            <td>φₘ = φ₀ - 2πx/λ, en rad</td>
+                        </tr>
+                        <tr>
+                            <td>Vitesse instantanée et Vmax</td>
+                            <td>V = aω cos(ωt + φ) et Vₘₐₓ = aω</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Nombre et position des points</h3>
+                <div class="two-columns">
+                    <div>
+                        <h4>À Amplitude maximale (mobile)</h4>
+                        <ul>
+                            <li>Nombre : -λ/2 ≤ k ≤ λ/2</li>
+                            <li>Position % S1 ou S2 : d₁ = d₂ = kλ</li>
+                            <li>Positions par rapport au milieu : d = kλ</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>À Amplitude nulle (immobile)</h4>
+                        <ul>
+                            <li>Nombre : -λ/2+λ/4 ≤ k ≤ λ/2+λ/4</li>
+                            <li>Position % S1 ou S2 : d₁ = d₂ = (2k + 1)λ/2</li>
+                            <li>Positions par rapport au milieu : d = (2k + 1)λ/2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interference">
+            <h2>Somme de fonctions sinusoïdales et Interférences</h2>
+            
+            <div class="card">
+                <h3>Somme de deux fonctions sinusoïdales (même fréquence)</h3>
+                <div class="formule-box math-formulas">
+                    <p><strong>Calcul OM :</strong></p>
+                    <p>||OM|| = A = √(a<sub>1</sub>² + a<sub>2</sub>² + 2a<sub>1</sub>a<sub>2</sub> cos(φ<sub>2</sub> - φ<sub>1</sub>))</p>
+                    <p>tan φ = (a<sub>1</sub> sin φ<sub>1</sub> + a<sub>2</sub> sin φ<sub>2</sub>)/(a<sub>1</sub> cos φ<sub>1</sub> + a<sub>2</sub> cos φ<sub>2</sub>)</p>
+                    <p><strong>E-H d'un point M :</strong> y<sub>M</sub>(t) = A sin(ωt + φ<sub>0</sub> - 2πx/λ) en (m, cm, mm)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Phénomène de propagation et tension</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Phénomène de propagation des ondes transversales</td>
+                            <td>Onde circulaire concentrique équidistants de λ (liquide)<br>
+                                On observe une onde transversale périodique sinusoïdale qui se pulse par l'intermédiaire d'une corde.</td>
+                        </tr>
+                        <tr>
+                            <td>Tension de la corde</td>
+                            <td>F = V²μ en N ou F = F · V² en N</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Nombre et position des points en fonction du déphasage</h3>
+                <table class="formule-table">
+                    <thead>
+                        <tr>
+                            <th>En phase</th>
+                            <th>En opposition de phase</th>
+                            <th>En quadrature de phase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Position : x = kλ</td>
+                            <td>Position : x = (2k + 1)λ/2</td>
+                            <td>Position : x = (2k + 1)λ/4</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre : 0 ≤ k ≤ λ/2</td>
+                            <td>Nombre : 0 ≤ k ≤ λ/2</td>
+                            <td>Nombre : 0 ≤ k ≤ λ/2</td>
+                        </tr>
+                        <tr>
+                            <td>||OM|| = a₁ + a₂</td>
+                            <td>||OM|| = |a₁ - a₂|</td>
+                            <td>||OM|| = √(a₁² + a₂²)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Interférence mécanique</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Qu'observe-t-on ?</td>
+                            <td>On observe des rides fixes ayant la forme d'hyperbole.</td>
+                        </tr>
+                        <tr>
+                            <td>Description du phénomène</td>
+                            <td>On observe des lignes de crêtes en forme d'arc d'hyperbole. Ce sont des franges d'interférences, dû à la superposition des ondes mécanique issue de S1 et S2</td>
+                        </tr>
+                        <tr>
+                            <td>E-H d'un point M</td>
+                            <td>y₁₂(t) = A sin(ωt + φ)<br>
+                                A = 2a·cos(π/λ(d₁ - d₂))<br>
+                                φ = φ₀ - π/λ(d₁ + d₂)</td>
+                        </tr>
+                        <tr>
+                            <td>Interfrange</td>
+                            <td>distance qui sépare les milieux de deux franges consécutives de même nature.<br>i(Δm < λ) = λD/a (en cm)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="lumiere">
+            <h2>Interférence Lumineuse</h2>
+            
+            <div class="card">
+                <h3>Caractéristiques</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Phénomène physique</td>
+                            <td>Phénomène d'interférence lumineuse.</td>
+                        </tr>
+                        <tr>
+                            <td>Observation sur l'écran</td>
+                            <td>On observe des franges d'interférences.</td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>On observe des raies alternativement sombre et brillante. Dû à superposition des ondes lumineuses issues de S1 et S2</td>
+                        </tr>
+                        <tr>
+                            <td>Nature de la lumière</td>
+                            <td>Ondulatoire ou vibratoire</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Conditions et paramètres</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Condition d'existence</td>
+                            <td>Il faut que les 2 sources soient :<br>
+                                - Synchrones (même fréquence)<br>
+                                - Cohérentes (même phase)<br>
+                                La lumière doit être de nature ondulatoire</td>
+                        </tr>
+                        <tr>
+                            <td>Angle biprisme et déviation</td>
+                            <td>A̅ = a/2(n-1)·d₁ et D̅ = (n - 1)·A̅</td>
+                        </tr>
+                        <tr>
+                            <td>Angle miroir Fresnel</td>
+                            <td>α = a/2d₁</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Formules selon le dispositif</h3>
+                <table class="formule-table">
+                    <thead>
+                        <tr>
+                            <th>Paramètre</th>
+                            <th>Young</th>
+                            <th>Miroir Fresnel</th>
+                            <th>Biprisme Fresnel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Largeur des fentes a=S1S2</td>
+                            <td>a = λD/i</td>
+                            <td>a = 2d₁·α</td>
+                            <td>a = 2Dd₁</td>
+                        </tr>
+                        <tr>
+                            <td>Interfrange i</td>
+                            <td>i = λD/a</td>
+                            <td colspan="2">i = λ(d₁ + d₂)/a</td>
+                        </tr>
+                        <tr>
+                            <td>Largeur champ d'interférence L</td>
+                            <td>L = a·D/d</td>
+                            <td>L = a·d₂/d₁</td>
+                            <td>L = 2d₂·α</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Franges et positions</h3>
+                <table class="formule-table">
+                    <thead>
+                        <tr>
+                            <th>Paramètre</th>
+                            <th>Frange brillante</th>
+                            <th>Frange obscure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre de franges</td>
+                            <td>N=L/i + 1</td>
+                            <td>N=L/i</td>
+                        </tr>
+                        <tr>
+                            <td>Position des franges</td>
+                            <td>x = p · i</td>
+                            <td>x = (p − 0,5)i</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="photoelectrique">
+            <h2>Effet Photoélectrique</h2>
+            
+            <div class="card">
+                <h3>Définition</h3>
+                <div class="formule-box">
+                    <p>Emission d'électrons du métal convenablement éclairé.</p>
+                    <p><strong>Nature de la lumière:</strong> Corpusculaire</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Paramètres fondamentaux</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Energie d'extraction (J ou eV)</td>
+                            <td>Energie minimale nécessaire pour extraire l'électron du métal<br>
+                                ω₀ = hC/λ₀ ou ω₀ = hν₀ ou ω₀ = ω − Ec</td>
+                        </tr>
+                        <tr>
+                            <td>Longueur d'onde seuil (μm)</td>
+                            <td>Longueur d'onde maximale du photon pour produire E.P.E<br>
+                                λ₀ = hC/ω₀ ou λ₀ = C/ν₀</td>
+                        </tr>
+                        <tr>
+                            <td>Fréquence seuil (Hz)</td>
+                            <td>Fréquence minimale pour extraire l'électron du métal<br>
+                                ν₀ = C/λ₀ ou ν₀ = ω₀/h</td>
+                        </tr>
+                        <tr>
+                            <td>Potentiel d'arrêt (V)</td>
+                            <td>Tension négative appliquée entre les électrodes pour annuler E.P.E.<br>
+                                U₀ = -Ec/e</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Énergie et conditions</h3>
+                <table class="formule-table">
+                    <tbody>
+                        <tr>
+                            <td>Energie cinétique max de l'électron (J)</td>
+                            <td>Ec = ω − ω₀ ou Ec = |U₀|·e</td>
+                        </tr>
+                        <tr>
+                            <td>Energie d'un photon (J)</td>
+                            <td>ω = hC/λ ou ω = hν ou ω = ω₀ + Ec</td>
+                        </tr>
+                        <tr>
+                            <td>Longueur d'onde (photon incident)</td>
+                            <td>λ = hC/ω ou λ = C/ν</td>
+                        </tr>
+                        <tr>
+                            <td>Vitesse max de l'électron (m/s)</td>
+                            <td>Vₘₐₓ = √(2Ec/mₑ)</td>
+                        </tr>
+                        <tr>
+                            <td>Condition existence E.P.E</td>
+                            <td>ω > ω₀ ou ν > ν₀ ou λ < λ₀</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div id="back-to-top">
+            <span>↑</span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Formules de Physique - Un site créé à des fins éducatives</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

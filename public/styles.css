@@ -1,0 +1,355 @@
+:root {
+    --primary-color: #3498db;
+    --primary-light: #5dade2;
+    --primary-dark: #2980b9;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+    --background-light: #f8f9fa;
+    --background-dark: #343a40;
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+    --border-color: #ddd;
+    --success-color: #2ecc71;
+    --gradient-1: linear-gradient(135deg, #3498db, #9b59b6);
+    --gradient-2: linear-gradient(135deg, #e74c3c, #f39c12);
+    --gradient-3: linear-gradient(135deg, #2ecc71, #3498db);
+    --gradient-4: linear-gradient(135deg, #f1c40f, #e67e22);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: var(--gradient-1);
+    color: var(--text-light);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-dark);
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: -20px;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+}
+
+nav li {
+    padding: 15px 25px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition);
+}
+
+nav li:hover {
+    color: var(--primary-color);
+}
+
+nav li.active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+nav li.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Search Box */
+#search-box {
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+#search-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+}
+
+#search-button {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+#search-button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px 0 60px;
+}
+
+section {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    margin: 30px 0;
+    color: var(--primary-dark);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-1);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--primary-dark);
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formule Box and Tables */
+.formule-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.formule-box ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.formule-box p {
+    margin-bottom: 10px;
+}
+
+.formule-box strong {
+    color: var(--primary-dark);
+}
+
+.formule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.formule-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.formule-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.formule-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.formule-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Two column layout */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.math-formulas {
+    font-family: 'Times New Roman', serif;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    transition: var(--transition);
+    z-index: 99;
+}
+
+#back-to-top span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#back-to-top:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-5px);
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    nav {
+        margin-top: -15px;
+    }
+    
+    nav li {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+}
+
+/* Animation for specific elements */
+.highlight {
+    animation: highlight 2s forwards;
+}
+
+@keyframes highlight {
+    0% { background-color: rgba(243, 156, 18, 0.2); }
+    100% { background-color: transparent; }
+}
