@@ -266,6 +266,22 @@ h4 {
     font-family: 'Times New Roman', serif;
 }
 
+.frac {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 0.2em;
+}
+.frac > sup {
+    display: block;
+    border-bottom: 1px solid;
+    padding: 0 0.2em;
+}
+.frac > sub {
+    display: block;
+    padding: 0 0.2em;
+}
+
 /* Back to top button */
 #back-to-top {
     position: fixed;

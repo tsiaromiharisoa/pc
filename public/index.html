@@ -6,6 +6,24 @@
     <title>Formules de Physique - Propagation des Ondes</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .frac {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+        }
+        .frac > sup {
+            display: block;
+            border-bottom: 1px solid;
+            font-size: 0.8em;
+        }
+        .frac > sub {
+            display: block;
+            font-size: 0.8em;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -40,8 +58,8 @@
                     <ul>
                         <li>(Paire) + π = 0</li>
                         <li>i(Impaire) + π = ±π</li>
-                        <li>i(Paire + 0,5)π = ∓ <sup>π</sup>⁄<sub>2</sub></li>
-                        <li>i(Impaire + 0,5)π = ± <sup>π</sup>⁄<sub>2</sub></li>
+                        <li>i(Paire + 0,5)π = ∓ <span class="frac"><sup>π</sup><sub>2</sub></span></li>
+                        <li>i(Impaire + 0,5)π = ± <span class="frac"><sup>π</sup><sub>2</sub></span></li>
                     </ul>
                 </div>
             </div>
@@ -58,15 +76,15 @@
                     <tbody>
                         <tr>
                             <td>La fréquence N (Hz)</td>
-                            <td>Nombre d'oscillations effectuées en une seconde.<br>N = <sup>ω</sup>⁄<sub>2π</sub> ou ν = <sup>1</sup>⁄<sub>T</sub></td>
+                            <td>Nombre d'oscillations effectuées en une seconde.<br>N = <span class="frac"><sup>ω</sup><sub>2π</sub></span> ou ν = <span class="frac"><sup>1</sup><sub>T</sub></span></td>
                         </tr>
                         <tr>
                             <td>La période T (s)</td>
-                            <td>C'est la durée d'une oscillation T = <sup>2π</sup>⁄<sub>ω</sub> ou T = <sup>1</sup>⁄<sub>ν</sub></td>
+                            <td>C'est la durée d'une oscillation T = <span class="frac"><sup>2π</sup><sub>ω</sub></span> ou T = <span class="frac"><sup>1</sup><sub>ν</sub></span></td>
                         </tr>
                         <tr>
                             <td>La longueur d'onde λ (m, cm, mm)</td>
-                            <td>Distance parcourue par l'onde pendant une période<br>λ = <sup>c</sup>⁄<sub>ν</sub></td>
+                            <td>Distance parcourue par l'onde pendant une période<br>λ = <span class="frac"><sup>c</sup><sub>ν</sub></span></td>
                         </tr>
                         <tr>
                             <td>Onde transversale</td>
@@ -95,23 +113,23 @@
                             <td>y₁(t) = Asin(ωt + φ₀) (en m, cm, mm)<br>
                                 φ = 0, sens positif des élongations<br>
                                 φ = π, sens négatif des élongations<br>
-                                φ = <sup>π</sup>⁄<sub>2</sub>, élongations maximales<br>
-                                φ = -<sup>π</sup>⁄<sub>2</sub>, élongations minimales</td>
+                                φ = <span class="frac"><sup>π</sup><sub>2</sub></span>, élongations maximales<br>
+                                φ = -<span class="frac"><sup>π</sup><sub>2</sub></span>, élongations minimales</td>
                         </tr>
                         <tr>
                             <td>Amplitude (m, cm, mm)</td>
                             <td>C'est la valeur maximale prise par l'élongation.<br>
-                                a = <sup>V₀</sup>⁄<sub>ω</sub> (V₀ = vitesse initiale)<br>
-                                a = <sup>L</sup>⁄<sub>2</sub> (L : longueur trajectoire)</td>
+                                a = <span class="frac"><sup>V₀</sup><sub>ω</sub></span> (V₀ = vitesse initiale)<br>
+                                a = <span class="frac"><sup>L</sup><sub>2</sub></span> (L : longueur trajectoire)</td>
                         </tr>
                         <tr>
                             <td>Célérité (vitesse de propagation)</td>
-                            <td>v = √(<sup>F</sup>⁄<sub>μ</sub>) ou v = √(<sup>E</sup>⁄<sub>ρ</sub>) (corde seulement)<br>
-                                v = λ · N ou v = <sup>λ</sup>⁄<sub>T</sub> (liquide ou une corde)</td>
+                            <td>v = √(<span class="frac"><sup>F</sup><sub>μ</sub></span>) ou v = √(<span class="frac"><sup>E</sup><sub>ρ</sub></span>) (corde seulement)<br>
+                                v = λ · N ou v = <span class="frac"><sup>λ</sup><sub>T</sub></span> (liquide ou une corde)</td>
                         </tr>
                         <tr>
                             <td>Phase d'un point situé à distance x</td>
-                            <td>φₘ = φ₀ - <sup>2πx</sup>⁄<sub>λ</sub>, en rad</td>
+                            <td>φₘ = φ₀ - <span class="frac"><sup>2πx</sup><sub>λ</sub></span>, en rad</td>
                         </tr>
                         <tr>
                             <td>Vitesse instantanée et Vmax</td>
@@ -127,7 +145,7 @@
                     <div>
                         <h4>À Amplitude maximale (mobile)</h4>
                         <ul>
-                            <li>Nombre : -<sup>λ</sup>⁄<sub>2</sub> ≤ k ≤ <sup>λ</sup>⁄<sub>2</sub></li>
+                            <li>Nombre : -<span class="frac"><sup>λ</sup><sub>2</sub></span> ≤ k ≤ <span class="frac"><sup>λ</sup><sub>2</sub></span></li>
                             <li>Position % S1 ou S2 : d₁ = d₂ = kλ</li>
                             <li>Positions par rapport au milieu : d = kλ</li>
                         </ul>
@@ -135,9 +153,9 @@
                     <div>
                         <h4>À Amplitude nulle (immobile)</h4>
                         <ul>
-                            <li>Nombre : -<sup>λ</sup>⁄<sub>2</sub>+<sup>λ</sup>⁄<sub>4</sub> ≤ k ≤ <sup>λ</sup>⁄<sub>2</sub>+<sup>λ</sup>⁄<sub>4</sub></li>
-                            <li>Position % S1 ou S2 : d₁ = d₂ = (2k + 1)<sup>λ</sup>⁄<sub>2</sub></li>
-                            <li>Positions par rapport au milieu : d = (2k + 1)<sup>λ</sup>⁄<sub>2</sub></li>
+                            <li>Nombre : -<span class="frac"><sup>λ</sup><sub>2</sub></span>+<span class="frac"><sup>λ</sup><sub>4</sub></span> ≤ k ≤ <span class="frac"><sup>λ</sup><sub>2</sub></span>+<span class="frac"><sup>λ</sup><sub>4</sub></span></li>
+                            <li>Position % S1 ou S2 : d₁ = d₂ = (2k + 1)<span class="frac"><sup>λ</sup><sub>2</sub></span></li>
+                            <li>Positions par rapport au milieu : d = (2k + 1)<span class="frac"><sup>λ</sup><sub>2</sub></span></li>
                         </ul>
                     </div>
                 </div>
@@ -153,7 +171,7 @@
                     <p><strong>Calcul OM :</strong></p>
                     <p>||OM|| = A = √(a<sub>1</sub>² + a<sub>2</sub>² + 2a<sub>1</sub>a<sub>2</sub> cos(φ<sub>2</sub> - φ<sub>1</sub>))</p>
                     <p>tan φ = (a<sub>1</sub> sin φ<sub>1</sub> + a<sub>2</sub> sin φ<sub>2</sub>)/(a<sub>1</sub> cos φ<sub>1</sub> + a<sub>2</sub> cos φ<sub>2</sub>)</p>
-                    <p><strong>E-H d'un point M :</strong> y<sub>M</sub>(t) = A sin(ωt + φ<sub>0</sub> - <sup>2πx</sup>⁄<sub>λ</sub>) en (m, cm, mm)</p>
+                    <p><strong>E-H d'un point M :</strong> y<sub>M</sub>(t) = A sin(ωt + φ<sub>0</sub> - <span class="frac"><sup>2πx</sup><sub>λ</sub></span>) en (m, cm, mm)</p>
                 </div>
             </div>
 
@@ -187,13 +205,13 @@
                     <tbody>
                         <tr>
                             <td>Position : x = kλ</td>
-                            <td>Position : x = (2k + 1)<sup>λ</sup>⁄<sub>2</sub></td>
-                            <td>Position : x = (2k + 1)<sup>λ</sup>⁄<sub>4</sub></td>
+                            <td>Position : x = (2k + 1)<span class="frac"><sup>λ</sup><sub>2</sub></span></td>
+                            <td>Position : x = (2k + 1)<span class="frac"><sup>λ</sup><sub>4</sub></span></td>
                         </tr>
                         <tr>
-                            <td>Nombre : 0 ≤ k ≤ <sup>λ</sup>⁄<sub>2</sub></td>
-                            <td>Nombre : 0 ≤ k ≤ <sup>λ</sup>⁄<sub>2</sub></td>
-                            <td>Nombre : 0 ≤ k ≤ <sup>λ</sup>⁄<sub>2</sub></td>
+                            <td>Nombre : 0 ≤ k ≤ <span class="frac"><sup>λ</sup><sub>2</sub></span></td>
+                            <td>Nombre : 0 ≤ k ≤ <span class="frac"><sup>λ</sup><sub>2</sub></span></td>
+                            <td>Nombre : 0 ≤ k ≤ <span class="frac"><sup>λ</sup><sub>2</sub></span></td>
                         </tr>
                         <tr>
                             <td>||OM|| = a₁ + a₂</td>
@@ -219,12 +237,12 @@
                         <tr>
                             <td>E-H d'un point M</td>
                             <td>y₁₂(t) = A sin(ωt + φ)<br>
-                                A = 2a·cos(<sup>π</sup>⁄<sub>λ</sub>(d₁ - d₂))<br>
-                                φ = φ₀ - <sup>π</sup>⁄<sub>λ</sub>(d₁ + d₂)</td>
+                                A = 2a·cos(<span class="frac"><sup>π</sup><sub>λ</sub></span>(d₁ - d₂))<br>
+                                φ = φ₀ - <span class="frac"><sup>π</sup><sub>λ</sub></span>(d₁ + d₂)</td>
                         </tr>
                         <tr>
                             <td>Interfrange</td>
-                            <td>distance qui sépare les milieux de deux franges consécutives de même nature.<br>i(Δm < λ) = <sup>λD</sup>⁄<sub>a</sub> (en cm)</td>
+                            <td>distance qui sépare les milieux de deux franges consécutives de même nature.<br>i(Δm < λ) = <span class="frac"><sup>λD</sup><sub>a</sub></span> (en cm)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -271,11 +289,11 @@
                         </tr>
                         <tr>
                             <td>Angle biprisme et déviation</td>
-                            <td>A̅ = <sup>a</sup>⁄<sub>2(n-1)·d₁</sub> et D̅ = (n - 1)·A̅</td>
+                            <td>A̅ = <span class="frac"><sup>a</sup><sub>2(n-1)·d₁</sub></span> et D̅ = (n - 1)·A̅</td>
                         </tr>
                         <tr>
                             <td>Angle miroir Fresnel</td>
-                            <td>α = <sup>a</sup>⁄<sub>2d₁</sub></td>
+                            <td>α = <span class="frac"><sup>a</sup><sub>2d₁</sub></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -295,19 +313,19 @@
                     <tbody>
                         <tr>
                             <td>Largeur des fentes a=S1S2</td>
-                            <td>a = <sup>λD</sup>⁄<sub>i</sub></td>
+                            <td>a = <span class="frac"><sup>λD</sup><sub>i</sub></span></td>
                             <td>a = 2d₁·α</td>
                             <td>a = 2Dd₁</td>
                         </tr>
                         <tr>
                             <td>Interfrange i</td>
-                            <td>i = <sup>λD</sup>⁄<sub>a</sub></td>
-                            <td colspan="2">i = <sup>λ(d₁ + d₂)</sup>⁄<sub>a</sub></td>
+                            <td>i = <span class="frac"><sup>λD</sup><sub>a</sub></span></td>
+                            <td colspan="2">i = <span class="frac"><sup>λ(d₁ + d₂)</sup><sub>a</sub></span></td>
                         </tr>
                         <tr>
                             <td>Largeur champ d'interférence L</td>
-                            <td>L = <sup>a·D</sup>⁄<sub>d</sub></td>
-                            <td>L = <sup>a·d₂</sup>⁄<sub>d₁</sub></td>
+                            <td>L = <span class="frac"><sup>a·D</sup><sub>d</sub></span></td>
+                            <td>L = <span class="frac"><sup>a·d₂</sup><sub>d₁</sub></span></td>
                             <td>L = 2d₂·α</td>
                         </tr>
                     </tbody>
@@ -327,8 +345,8 @@
                     <tbody>
                         <tr>
                             <td>Nombre de franges</td>
-                            <td>N=<sup>L</sup>⁄<sub>i</sub> + 1</td>
-                            <td>N=<sup>L</sup>⁄<sub>i</sub></td>
+                            <td>N=<span class="frac"><sup>L</sup><sub>i</sub></span> + 1</td>
+                            <td>N=<span class="frac"><sup>L</sup><sub>i</sub></span></td>
                         </tr>
                         <tr>
                             <td>Position des franges</td>
@@ -358,22 +376,22 @@
                         <tr>
                             <td>Energie d'extraction (J ou eV)</td>
                             <td>Energie minimale nécessaire pour extraire l'électron du métal<br>
-                                ω₀ = <sup>hC</sup>⁄<sub>λ₀</sub> ou ω₀ = hν₀ ou ω₀ = ω − Ec</td>
+                                ω₀ = <span class="frac"><sup>hC</sup><sub>λ₀</sub></span> ou ω₀ = hν₀ ou ω₀ = ω − Ec</td>
                         </tr>
                         <tr>
                             <td>Longueur d'onde seuil (μm)</td>
                             <td>Longueur d'onde maximale du photon pour produire E.P.E<br>
-                                λ₀ = <sup>hC</sup>⁄<sub>ω₀</sub> ou λ₀ = <sup>C</sup>⁄<sub>ν₀</sub></td>
+                                λ₀ = <span class="frac"><sup>hC</sup><sub>ω₀</sub></span> ou λ₀ = <span class="frac"><sup>C</sup><sub>ν₀</sub></span></td>
                         </tr>
                         <tr>
                             <td>Fréquence seuil (Hz)</td>
                             <td>Fréquence minimale pour extraire l'électron du métal<br>
-                                ν₀ = <sup>C</sup>⁄<sub>λ₀</sub> ou ν₀ = <sup>ω₀</sup>⁄<sub>h</sub></td>
+                                ν₀ = <span class="frac"><sup>C</sup><sub>λ₀</sub></span> ou ν₀ = <span class="frac"><sup>ω₀</sup><sub>h</sub></span></td>
                         </tr>
                         <tr>
                             <td>Potentiel d'arrêt (V)</td>
                             <td>Tension négative appliquée entre les électrodes pour annuler E.P.E.<br>
-                                U₀ = -<sup>Ec</sup>⁄<sub>e</sub></td>
+                                U₀ = -<span class="frac"><sup>Ec</sup><sub>e</sub></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -389,15 +407,15 @@
                         </tr>
                         <tr>
                             <td>Energie d'un photon (J)</td>
-                            <td>ω = <sup>hC</sup>⁄<sub>λ</sub> ou ω = hν ou ω = ω₀ + Ec</td>
+                            <td>ω = <span class="frac"><sup>hC</sup><sub>λ</sub></span> ou ω = hν ou ω = ω₀ + Ec</td>
                         </tr>
                         <tr>
                             <td>Longueur d'onde (photon incident)</td>
-                            <td>λ = <sup>hC</sup>⁄<sub>ω</sub> ou λ = <sup>C</sup>⁄<sub>ν</sub></td>
+                            <td>λ = <span class="frac"><sup>hC</sup><sub>ω</sub></span> ou λ = <span class="frac"><sup>C</sup><sub>ν</sub></span></td>
                         </tr>
                         <tr>
                             <td>Vitesse max de l'électron (m/s)</td>
-                            <td>Vₘₐₓ = √(<sup>2Ec</sup>⁄<sub>mₑ</sub>)</td>
+                            <td>Vₘₐₓ = √(<span class="frac"><sup>2Ec</sup><sub>mₑ</sub></span>)</td>
                         </tr>
                         <tr>
                             <td>Condition existence E.P.E</td>
